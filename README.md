@@ -1,6 +1,6 @@
 # Git Workflow
 
-The goal of this project is to explain a basic Git workflow. I will deal with 2 GitHub accounts for this explanation (**TechSnazzy (TS)** and **SanFrancisco (SF)**). And each of those accounts will have their own computer. So for example, there will be **TS computer** and **SF computer**.
+The goal of this project is to explain a basic Git workflow as I understand it. I will deal with 2 GitHub accounts for this explanation (**TechSnazzy (TS)** and **SanFrancisco (SF)**). And each of those accounts will have their own computer that will hold the cloned project folders. So for example, there will be **TS computer** and **SF computer**.
 
 ## Create a New Repository
 
