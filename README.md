@@ -32,3 +32,8 @@ git commit -m "Updated README to include Fork and Clone Git Workflow Repo instru
 git push
 ```
 
+## Issue a Pull Request from Forked Repo to Original Repo
+
+So now the SF repo is ahead by one commit. You now need to issue a pull request fromt eh SF repo to let it know that you've pushed your commits to the SF repo and that now the TS repo should pull those commits to it's own orignal repo. Does that make sense?
+
+Then from the TS repo, you'll need to login and merge the pull request and then confirm that merge has completed. Once that is done, then the TS repo
