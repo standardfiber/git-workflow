@@ -50,6 +50,8 @@ Then from the TS repo, you'll need to login and merge the pull request and then 
 
 ## Sync Your Changes
 
+First, do a PR and then merge the changes. Once that is done, do this.
+
 ```
 git pull --rebase upstream master
 git push --force-with-lease origin master
