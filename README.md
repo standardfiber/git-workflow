@@ -1,13 +1,13 @@
 # Git Workflow
 
-The goal of this project is to explain a basic Git workflow.
+The goal of this project is to explain a basic Git workflow. I will deal with 2 GitHub accounts for this explanation (**TechSnazzy (TS)** and **SanFrancisco (SF)**). And each of those accounts will have their own computer. So for example, there will be **TS computer** and **SF computer**.
 
-## Create a new repository
+## Create a New Repository
 
-- On GitHub, create a repo called: `git-workflow`.
-- Then on the local computer, create a folder that contains `index.html` and `README.md`.
-- Note: index.html should include a simple boilerplate.
-- Initialize project and push to GitHub.
+- On TS GitHub, create a repo called: `git-workflow`.
+- Then on the TS computer, create a project folder that contains `index.html` and `README.md`.
+- **Note**: `index.html` should include a simple boilerplate just so that it contains something we can edit later.
+- Initialize the project and push to GitHub.
 
 ```
 cd <your_project_folder>
@@ -18,3 +18,17 @@ git push
 git remote add origin https://github.com/TechSnazzy/git-workflow.git
 git push -u origin master
 ```
+
+## Fork and Clone Git Workflow Repo
+
+- From SF GitHub account, fork the original repo so that SF has it's own copy of the repo.
+- Then clone the repo to SF computer.
+- Now add, commit and push your edits to back to the SF repo.
+- Once this is done, now the SF repo will be ahead of the TS repo by one commit.
+
+```
+git add .
+git commit -m "Updated README to include Fork and Clone Git Workflow Repo instructions"
+git push
+```
+
