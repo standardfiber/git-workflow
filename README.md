@@ -23,8 +23,18 @@ git push -u origin master
 
 - From SF GitHub account, fork the original repo so that SF has it's own copy of the repo.
 - Then clone the repo to SF computer.
-- Now add, commit and push your edits to back to the SF repo.
-- Once this is done, now the SF repo will be ahead of the TS repo by one commit.
+
+## Sync Your Fork with Original Repo
+
+Note: This part I found on a (stackoverflow)[https://stackoverflow.com/questions/41283955/github-keeps-saying-this-branch-is-x-commits-ahead-y-commits-behind] thread.
+
+From the Forked Clone on SF computer do this before anything else after the first clone.
+
+```
+https://github.com/TechSnazzy/git-workflow.git
+```
+
+## Edit, Add, Commit and Push your Project to the Forked Repo
 
 ```
 git add .
@@ -32,8 +42,17 @@ git commit -m "Updated README to include Fork and Clone Git Workflow Repo instru
 git push
 ```
 
-## Issue a Pull Request from Forked Repo to Original Repo
+<!-- ## Issue a Pull Request from Forked Repo to Original Repo
 
 So now the SF repo is ahead by one commit. You now need to issue a pull request fromt eh SF repo to let it know that you've pushed your commits to the SF repo and that now the TS repo should pull those commits to it's own orignal repo. Does that make sense?
 
-Then from the TS repo, you'll need to login and merge the pull request and then confirm that merge has completed. Once that is done, then the TS repo
+Then from the TS repo, you'll need to login and merge the pull request and then confirm that merge has completed. Once that is done, then the TS repo -->
+
+## Sync Your Changes
+
+First, do a PR and then merge the changes. Once that is done, do this.
+
+```
+git pull --rebase upstream master
+git push --force-with-lease origin master
+```
